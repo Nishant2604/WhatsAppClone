@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#075E54</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFFAFA</color>
+    <color name="floating_button">#00CA52</color>
+    <color name="soft">#858b90</color>
+</resources>

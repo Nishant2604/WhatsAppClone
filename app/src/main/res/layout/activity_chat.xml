@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nishant.whatsappclone.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:scaleY="0.75"
+        android:scaleX="0.85"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingTop="2dp"
+                app:srcCompat="@drawable/emoticon" />
+
+            <EditText
+                android:paddingStart="5dp"
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:text="@string/default_message"
+                android:textColor="@color/soft"
+                android:backgroundTint="@color/colorAccent" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="4dp"
+                android:paddingEnd="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/camera" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:backgroundTint="@color/floating_button"
+            app:layout_anchor="@+id/container"
+            app:layout_anchorGravity="bottom|right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/mic"
+            tools:srcCompat="@drawable/SelectContact" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
